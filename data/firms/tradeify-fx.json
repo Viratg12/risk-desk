@@ -1,0 +1,267 @@
+{
+  "id": "tradeify-fx",
+  "name": "Tradeify FX",
+  "market": "cfd",
+  "platform": "MT5",
+  "accountCurrency": "USD",
+  "instruments": "tradeify-fx-mt5",
+  "checked": "2026-11-19",
+  "clock": {
+    "value": { "zone": "UTC", "dayStartsAt": "22:00" },
+    "status": "confirmed",
+    "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+    "checked": "2026-11-19",
+    "note": "The trading day runs from 22:00 to 22:00 UTC (3:30 AM IST), every day including weekends. It does not move with US daylight saving."
+  },
+  "breach": {
+    "value": { "touchIsBreach": true, "checkedOn": "equity" },
+    "status": "confirmed",
+    "source": "https://help.tradeifyfx.co/en/articles/16976076-trading-rules-overview",
+    "checked": "2026-11-19",
+    "note": "Reaching or going below a floor breaches the account. The check runs on live equity (balance plus open profit or loss)."
+  },
+  "plans": [
+    {
+      "id": "classic",
+      "name": "Classic (2-Step)",
+      "sizes": {
+        "value": [5000, 10000, 25000, 50000, 100000],
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975771-account-sizes-and-pricing",
+        "checked": "2026-11-19"
+      },
+      "purchased": null,
+      "stages": [
+        {
+          "id": "phase1",
+          "name": "Phase 1",
+          "funded": false,
+          "target": {
+            "value": { "pctOfSize": 5 },
+            "status": "confirmed",
+            "source": "https://help.tradeifyfx.co/en/articles/16976039-classic-2-step-guide",
+            "checked": "2026-11-19",
+            "note": "No time limit."
+          }
+        },
+        {
+          "id": "phase2",
+          "name": "Phase 2",
+          "funded": false,
+          "target": {
+            "value": { "pctOfSize": 10 },
+            "status": "confirmed",
+            "source": "https://help.tradeifyfx.co/en/articles/16976039-classic-2-step-guide",
+            "checked": "2026-11-19",
+            "note": "The lower target comes first: 5% in Phase 1, then 10% in Phase 2."
+          }
+        },
+        { "id": "funded", "name": "Funded", "funded": true, "target": null }
+      ],
+      "dailyLoss": {
+        "value": { "pctOfSize": 3, "from": "closedBalanceAtReset" },
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16976039-classic-2-step-guide",
+        "checked": "2026-11-19",
+        "note": "Floor = closed balance at the 22:00 UTC reset minus 3% of the account size. Open trades are left out of the snapshot. It is set again at every reset, weekends included."
+      },
+      "maxLoss": {
+        "value": { "type": "static", "pctOfSize": 10 },
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16976039-classic-2-step-guide",
+        "checked": "2026-11-19",
+        "note": "Floor = starting balance minus 10%. It never moves. No payout lock."
+      },
+      "consistency": null,
+      "news": {
+        "value": { "appliesTo": "funded", "minutesBefore": 5, "minutesAfter": 5 },
+        "status": "confirmed",
+        "source": "https://www.tradeifyfx.co/funded-trader-agreement",
+        "checked": "2026-11-19",
+        "note": "Funded accounts only. From 5 minutes before to 5 minutes after red-folder (high-impact) news on the dashboard calendar, you can't open, close or change trades or orders on symbols tied to that currency. A stop, target or pending order that fills in the window counts as a news trade: profit is removed, losses stay."
+      },
+      "marginCapPct": null,
+      "minHoldSeconds": null,
+      "contractCaps": null,
+      "notModelled": [
+        "Payouts (funded): every 14 days from your first funded trade, $100 minimum. They limit withdrawals, not trading.",
+        "No trade for 30 days in a row breaches the account (evaluations too).",
+        "Funded accounts are capped at $300,000 in total across Tradeify FX.",
+        "The largest open position per symbol is set in MT5 and not published.",
+        "Very large all-in sizing, high-frequency trading and ultra-short scalping are not allowed (judged on your overall pattern)."
+      ]
+    },
+    {
+      "id": "daily-legacy",
+      "name": "Daily (1-Step), bought before 10 Nov 2026",
+      "sizes": {
+        "value": [10000, 25000, 50000, 100000],
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975771-account-sizes-and-pricing",
+        "checked": "2026-11-19"
+      },
+      "purchased": { "before": "2026-11-10" },
+      "stages": [
+        {
+          "id": "evaluation",
+          "name": "Evaluation",
+          "funded": false,
+          "target": {
+            "value": { "pctOfSize": 10 },
+            "status": "confirmed",
+            "source": "https://help.tradeifyfx.co/en/articles/16975953-daily-1-step-guide",
+            "checked": "2026-11-19",
+            "note": "One phase, no time limit."
+          }
+        },
+        { "id": "funded", "name": "Funded", "funded": true, "target": null }
+      ],
+      "dailyLoss": null,
+      "maxLoss": {
+        "value": { "type": "trailing", "pctOfSize": 5, "on": "highestClosedBalance", "capAtStart": true, "lockOnPayoutRequest": false },
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975953-daily-1-step-guide",
+        "checked": "2026-11-19",
+        "note": "Floor = highest closed balance minus 5% of the account size. It rises only when a closed trade sets a new high, stops rising at the starting balance and never moves down. Open profit and payouts don't move it. No daily loss limit on Daily."
+      },
+      "consistency": {
+        "value": { "pctBestDay": 40, "appliesTo": "evaluation" },
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975953-daily-1-step-guide",
+        "checked": "2026-11-19",
+        "note": "Evaluation only. When you reach the target, your best day must be 40% or less of total profit. Being over is not a breach: keep trading until it fits."
+      },
+      "news": {
+        "value": { "appliesTo": "funded", "minutesBefore": 5, "minutesAfter": 5 },
+        "status": "confirmed",
+        "source": "https://www.tradeifyfx.co/funded-trader-agreement",
+        "checked": "2026-11-19",
+        "note": "Funded accounts only. From 5 minutes before to 5 minutes after red-folder (high-impact) news on the dashboard calendar, you can't open, close or change trades or orders on symbols tied to that currency. A stop, target or pending order that fills in the window counts as a news trade: profit is removed, losses stay."
+      },
+      "marginCapPct": null,
+      "minHoldSeconds": null,
+      "contractCaps": null,
+      "notModelled": [
+        "Tradeify gives no time of day for the 10 Nov 2026 switch. If you bought on 10 Nov 2026, ask support which rules apply. The evaluation's purchase date also decides the rules of the funded account that comes from it.",
+        "Payouts (funded): daily, each at most 3% of the starting balance, only from profit above a 4% buffer, $100 minimum. They limit withdrawals, not trading.",
+        "No trade for 30 days in a row breaches the account (evaluations too).",
+        "Funded accounts are capped at $300,000 in total across Tradeify FX.",
+        "The largest open position per symbol is set in MT5 and not published.",
+        "Very large all-in sizing, high-frequency trading and ultra-short scalping are not allowed (judged on your overall pattern)."
+      ]
+    },
+    {
+      "id": "daily-new",
+      "name": "Daily (1-Step), bought on or after 10 Nov 2026",
+      "sizes": {
+        "value": [10000, 25000, 50000, 100000],
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975771-account-sizes-and-pricing",
+        "checked": "2026-11-19"
+      },
+      "purchased": { "onOrAfter": "2026-11-10" },
+      "stages": [
+        {
+          "id": "evaluation",
+          "name": "Evaluation",
+          "funded": false,
+          "target": {
+            "value": { "pctOfSize": 10 },
+            "status": "confirmed",
+            "source": "https://help.tradeifyfx.co/en/articles/16975953-daily-1-step-guide",
+            "checked": "2026-11-19",
+            "note": "One phase, no time limit."
+          }
+        },
+        { "id": "funded", "name": "Funded", "funded": true, "target": null }
+      ],
+      "dailyLoss": null,
+      "maxLoss": {
+        "value": { "type": "static", "pctOfSize": 4 },
+        "status": "conflict",
+        "source": "https://help.tradeifyfx.co/en/articles/16975953-daily-1-step-guide",
+        "checked": "2026-11-19",
+        "note": "Floor = starting balance minus 4%. It never moves, and there is no payout lock. The firm's pages disagree: the pricing page lists 5% amounts under a '4% static' heading, while the Daily guide, the agreement and the homepage all say 4%. The app uses 4%, the stricter reading. No daily loss limit on Daily."
+      },
+      "consistency": {
+        "value": { "pctBestDay": 50, "appliesTo": "evaluation" },
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975953-daily-1-step-guide",
+        "checked": "2026-11-19",
+        "note": "Evaluation only. When you reach the target, your best day must be 50% or less of total profit (exactly 50% passes). Being over is not a breach: keep trading until it fits."
+      },
+      "news": {
+        "value": { "appliesTo": "funded", "minutesBefore": 5, "minutesAfter": 5 },
+        "status": "confirmed",
+        "source": "https://www.tradeifyfx.co/funded-trader-agreement",
+        "checked": "2026-11-19",
+        "note": "Funded accounts only. From 5 minutes before to 5 minutes after red-folder (high-impact) news on the dashboard calendar, you can't open, close or change trades or orders on symbols tied to that currency. A stop, target or pending order that fills in the window counts as a news trade: profit is removed, losses stay."
+      },
+      "marginCapPct": null,
+      "minHoldSeconds": null,
+      "contractCaps": null,
+      "notModelled": [
+        "Tradeify gives no time of day for the 10 Nov 2026 switch. If you bought on 10 Nov 2026, ask support which rules apply. The evaluation's purchase date also decides the rules of the funded account that comes from it.",
+        "Payouts (funded): daily, each at most 3% of the starting balance, only from profit above a 4% buffer, $100 minimum. They limit withdrawals, not trading.",
+        "No trade for 30 days in a row breaches the account (evaluations too).",
+        "Funded accounts are capped at $300,000 in total across Tradeify FX.",
+        "The largest open position per symbol is set in MT5 and not published.",
+        "Very large all-in sizing, high-frequency trading and ultra-short scalping are not allowed (judged on your overall pattern)."
+      ]
+    },
+    {
+      "id": "direct",
+      "name": "Direct (Instant Funding)",
+      "sizes": {
+        "value": [5000, 10000, 25000, 50000, 100000],
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975771-account-sizes-and-pricing",
+        "checked": "2026-11-19"
+      },
+      "purchased": null,
+      "stages": [{ "id": "funded", "name": "Funded", "funded": true, "target": null }],
+      "dailyLoss": {
+        "value": { "pctOfSize": 3, "from": "closedBalanceAtReset" },
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16976051-direct-instant-funding-guide",
+        "checked": "2026-11-19",
+        "note": "Floor = closed balance at the 22:00 UTC reset minus 3% of the account size. Open trades are left out of the snapshot. It is set again at every reset, weekends included."
+      },
+      "maxLoss": {
+        "value": { "type": "trailing", "pctOfSize": 6, "on": "highestClosedBalance", "capAtStart": true, "lockOnPayoutRequest": true },
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16976051-direct-instant-funding-guide",
+        "checked": "2026-11-19",
+        "note": "Floor = highest closed balance minus 6% of the account size. It moves only when a trade closes, never moves down and stops rising at the starting balance. Your first payout request locks it at the starting balance for good (agreement section B.5)."
+      },
+      "consistency": {
+        "value": { "pctBestDay": 20, "appliesTo": "payout" },
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16976051-direct-instant-funding-guide",
+        "checked": "2026-11-19",
+        "note": "Before you ask for a payout, your best day must be 20% or less of total profit (exactly 20% passes). Not a breach."
+      },
+      "news": {
+        "value": { "appliesTo": "funded", "minutesBefore": 5, "minutesAfter": 5 },
+        "status": "confirmed",
+        "source": "https://www.tradeifyfx.co/funded-trader-agreement",
+        "checked": "2026-11-19",
+        "note": "Funded accounts only. From 5 minutes before to 5 minutes after red-folder (high-impact) news on the dashboard calendar, you can't open, close or change trades or orders on symbols tied to that currency. A stop, target or pending order that fills in the window counts as a news trade: profit is removed, losses stay."
+      },
+      "marginCapPct": null,
+      "minHoldSeconds": null,
+      "contractCaps": null,
+      "notModelled": [
+        "Payouts: on request, $100 minimum, no maximum. The 20% rule means at least 5 profitable days in practice.",
+        "No trade for 30 days in a row breaches the account (evaluations too).",
+        "Funded accounts are capped at $300,000 in total across Tradeify FX.",
+        "The largest open position per symbol is set in MT5 and not published.",
+        "Very large all-in sizing, high-frequency trading and ultra-short scalping are not allowed (judged on your overall pattern)."
+      ]
+    }
+  ],
+  "notModelled": [
+    "Live Program: a tier reached after 5 payouts, with a 5% static max loss that locks at the starting balance on the first payout request. Not set up in the app.",
+    "Diwali Gold (3-Step, $250,001, no longer sold): 10% target each step, 3% daily loss, 10% static max loss, no EAs. Not set up in the app."
+  ]
+}

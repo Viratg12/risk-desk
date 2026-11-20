@@ -1,0 +1,1897 @@
+{
+  "id": "tradeify-fx-mt5",
+  "title": "Tradeify FX MT5 symbols",
+  "market": "cfd",
+  "accountCurrency": "USD",
+  "checked": "2026-11-19",
+  "classes": {
+    "fx": {
+      "label": "Forex",
+      "leverage": {
+        "value": 100,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Evaluation and funded accounts. MT5 may show a different cap for your account."
+      },
+      "commission": {
+        "value": { "type": "perLotPerSide", "amount": 3 },
+        "status": "confirmed",
+        "source": "https://www.tradeifyfx.co/funded-trader-agreement",
+        "checked": "2026-11-19",
+        "note": "$3 a lot when you open and $3 when you close ($6 round trip), unless MT5 shows a different rate for your account."
+      }
+    },
+    "metal": {
+      "label": "Metals",
+      "leverage": {
+        "value": 15,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Evaluation and funded accounts. MT5 may show a different cap for your account."
+      },
+      "commission": {
+        "value": { "type": "perLotPerSide", "amount": 3 },
+        "status": "confirmed",
+        "source": "https://www.tradeifyfx.co/funded-trader-agreement",
+        "checked": "2026-11-19",
+        "note": "$3 a lot when you open and $3 when you close ($6 round trip), unless MT5 shows a different rate for your account."
+      }
+    },
+    "energy": {
+      "label": "Energies",
+      "leverage": {
+        "value": 10,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Evaluation and funded accounts. MT5 may show a different cap for your account."
+      },
+      "commission": {
+        "value": { "type": "perLotPerSide", "amount": 3 },
+        "status": "confirmed",
+        "source": "https://www.tradeifyfx.co/funded-trader-agreement",
+        "checked": "2026-11-19",
+        "note": "$3 a lot when you open and $3 when you close ($6 round trip), unless MT5 shows a different rate for your account."
+      }
+    },
+    "index": {
+      "label": "Indices",
+      "leverage": {
+        "value": 30,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Evaluation and funded accounts. MT5 may show a different cap for your account."
+      },
+      "commission": {
+        "value": { "type": "none", "amount": 0 },
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16976432-understanding-cfd-trading",
+        "checked": "2026-11-19",
+        "note": "No commission on indices."
+      }
+    },
+    "crypto": {
+      "label": "Crypto",
+      "leverage": {
+        "value": 3,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Evaluation and funded accounts. MT5 may show a different cap for your account."
+      },
+      "commission": {
+        "value": { "type": "pctNotionalPerSide", "amount": 0.04 },
+        "status": "confirmed",
+        "source": "https://www.tradeifyfx.co/funded-trader-agreement",
+        "checked": "2026-11-19",
+        "note": "0.04% of the trade value when you open and again when you close (0.08% round trip)."
+      }
+    }
+  },
+  "symbols": [
+    {
+      "symbol": "EURUSD",
+      "name": "EUR/USD",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "USD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "USD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "EURGBP",
+      "name": "EUR/GBP",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "GBP",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "GBP",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "GBP"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "EURJPY",
+      "name": "EUR/JPY",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": 3,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "JPY",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "EURCHF",
+      "name": "EUR/CHF",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "CHF",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "CHF",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "CHF"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "EURCAD",
+      "name": "EUR/CAD",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "CAD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "CAD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "CAD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "EURAUD",
+      "name": "EUR/AUD",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "AUD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "AUD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "AUD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "EURNZD",
+      "name": "EUR/NZD",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "NZD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "NZD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "NZD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "name": "GBP/USD",
+      "class": "fx",
+      "base": "GBP",
+      "quote": "USD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["GBP", "USD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GBPJPY",
+      "name": "GBP/JPY",
+      "class": "fx",
+      "base": "GBP",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": 3,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "JPY",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["GBP", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GBPCHF",
+      "name": "GBP/CHF",
+      "class": "fx",
+      "base": "GBP",
+      "quote": "CHF",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "CHF",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["GBP", "CHF"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GBPCAD",
+      "name": "GBP/CAD",
+      "class": "fx",
+      "base": "GBP",
+      "quote": "CAD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "CAD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["GBP", "CAD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GBPAUD",
+      "name": "GBP/AUD",
+      "class": "fx",
+      "base": "GBP",
+      "quote": "AUD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "AUD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["GBP", "AUD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GBPNZD",
+      "name": "GBP/NZD",
+      "class": "fx",
+      "base": "GBP",
+      "quote": "NZD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "NZD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["GBP", "NZD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "AUDUSD",
+      "name": "AUD/USD",
+      "class": "fx",
+      "base": "AUD",
+      "quote": "USD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["AUD", "USD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "AUDJPY",
+      "name": "AUD/JPY",
+      "class": "fx",
+      "base": "AUD",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": 3,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "JPY",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["AUD", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "AUDCHF",
+      "name": "AUD/CHF",
+      "class": "fx",
+      "base": "AUD",
+      "quote": "CHF",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "CHF",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["AUD", "CHF"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "AUDCAD",
+      "name": "AUD/CAD",
+      "class": "fx",
+      "base": "AUD",
+      "quote": "CAD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "CAD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["AUD", "CAD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "AUDNZD",
+      "name": "AUD/NZD",
+      "class": "fx",
+      "base": "AUD",
+      "quote": "NZD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "NZD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["AUD", "NZD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "name": "NZD/USD",
+      "class": "fx",
+      "base": "NZD",
+      "quote": "USD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["NZD", "USD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "NZDJPY",
+      "name": "NZD/JPY",
+      "class": "fx",
+      "base": "NZD",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": 3,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "JPY",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["NZD", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "NZDCHF",
+      "name": "NZD/CHF",
+      "class": "fx",
+      "base": "NZD",
+      "quote": "CHF",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "CHF",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["NZD", "CHF"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "NZDCAD",
+      "name": "NZD/CAD",
+      "class": "fx",
+      "base": "NZD",
+      "quote": "CAD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "CAD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["NZD", "CAD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "USDJPY",
+      "name": "USD/JPY",
+      "class": "fx",
+      "base": "USD",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": 3,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "JPY",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "USDCHF",
+      "name": "USD/CHF",
+      "class": "fx",
+      "base": "USD",
+      "quote": "CHF",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "CHF",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD", "CHF"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "USDCAD",
+      "name": "USD/CAD",
+      "class": "fx",
+      "base": "USD",
+      "quote": "CAD",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "CAD",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD", "CAD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "CADJPY",
+      "name": "CAD/JPY",
+      "class": "fx",
+      "base": "CAD",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": 3,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "JPY",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["CAD", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "CADCHF",
+      "name": "CAD/CHF",
+      "class": "fx",
+      "base": "CAD",
+      "quote": "CHF",
+      "pip": 0.0001,
+      "digits": 5,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "CHF",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["CAD", "CHF"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "CHFJPY",
+      "name": "CHF/JPY",
+      "class": "fx",
+      "base": "CHF",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": 3,
+      "contract": {
+        "value": 100000,
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "1 lot = 100,000 units of the first currency."
+      },
+      "profitCurrency": {
+        "value": "JPY",
+        "status": "confirmed",
+        "source": "https://help.tradeifyfx.co/en/articles/16975756-glossary-of-key-terms",
+        "checked": "2026-11-19",
+        "note": "Profit on an FX pair is in its second (quote) currency."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["CHF", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "XAUUSD",
+      "name": "Gold",
+      "class": "metal",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 2,
+      "contract": {
+        "value": 100,
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "From your MT5 symbol list ('1 Lot = N Contracts'). Tradeify FX doesn't publish contract sizes. Check it once with a real trade."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "Priced in US dollars."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 1000, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "XAGUSD",
+      "name": "Silver",
+      "class": "metal",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 3,
+      "contract": {
+        "value": 5000,
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "From your MT5 symbol list ('1 Lot = N Contracts'). Tradeify FX doesn't publish contract sizes. Check it once with a real trade."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "Priced in US dollars."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 10, "max": 250 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "XTIUSD",
+      "name": "WTI crude oil",
+      "class": "energy",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 2,
+      "contract": {
+        "value": 1000,
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "From your MT5 symbol list ('1 Lot = N Contracts'). Tradeify FX doesn't publish contract sizes. Check it once with a real trade."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "Priced in US dollars."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 10, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "XBRUSD",
+      "name": "Brent crude oil",
+      "class": "energy",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 2,
+      "contract": {
+        "value": 1000,
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "From your MT5 symbol list ('1 Lot = N Contracts'). Tradeify FX doesn't publish contract sizes. Check it once with a real trade."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "Priced in US dollars."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 10, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "US30",
+      "name": "Dow Jones 30",
+      "class": "index",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 1,
+      "contract": {
+        "value": 10,
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "From your MT5 symbol list ('1 Lot = N Contracts'). Tradeify FX doesn't publish contract sizes. Check it once with a real trade."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "Priced in US dollars."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 10000, "max": 100000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "SPX500",
+      "name": "S&P 500",
+      "class": "index",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 1,
+      "contract": {
+        "value": 10,
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "From your MT5 symbol list ('1 Lot = N Contracts'). Tradeify FX doesn't publish contract sizes. Check it once with a real trade."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "Priced in US dollars."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 1000, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "NAS100",
+      "name": "Nasdaq 100",
+      "class": "index",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 1,
+      "contract": {
+        "value": 10,
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "From your MT5 symbol list ('1 Lot = N Contracts'). Tradeify FX doesn't publish contract sizes. Check it once with a real trade."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "Priced in US dollars."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 5000, "max": 60000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "UK100",
+      "name": "FTSE 100",
+      "class": "index",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 1,
+      "contract": {
+        "value": 10,
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "From your MT5 symbol list ('1 Lot = N Contracts'). Tradeify FX doesn't publish contract sizes. Check it once with a real trade."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Your MT5 symbol list doesn't show it. GBP is likely, but check: £10 and $10 a point are not the same risk. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["GBP"],
+      "priceSanity": {
+        "value": { "min": 2000, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "JP225",
+      "name": "Nikkei 225",
+      "class": "index",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 1,
+      "contract": {
+        "value": 10,
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "From your MT5 symbol list ('1 Lot = N Contracts'). Tradeify FX doesn't publish contract sizes. Check it once with a real trade."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Your MT5 symbol list doesn't show it. JPY is likely, but check: ¥10 and $10 a point are about 150 times apart. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["JPY"],
+      "priceSanity": {
+        "value": { "min": 10000, "max": 100000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "DE40",
+      "name": "DAX 40",
+      "class": "index",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 1,
+      "contract": {
+        "value": 10,
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "From your MT5 symbol list ('1 Lot = N Contracts'). Tradeify FX doesn't publish contract sizes. Check it once with a real trade."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Your MT5 symbol list doesn't show it. EUR is likely, but check: €10 and $10 a point are not the same risk. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR"],
+      "priceSanity": {
+        "value": { "min": 5000, "max": 50000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "AUS200",
+      "name": "ASX 200",
+      "class": "index",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 1,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not in your MT5 symbol list. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not in your MT5 symbol list. AUD is likely, but check. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["AUD"],
+      "priceSanity": {
+        "value": { "min": 3000, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "USDINDEX",
+      "name": "US Dollar Index",
+      "class": "index",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 3,
+      "contract": {
+        "value": 1000,
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "From your MT5 symbol list ('1 Lot = N Contracts'). Tradeify FX doesn't publish contract sizes. Check it once with a real trade."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "Priced in US dollars."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 200 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "BTCUSD",
+      "name": "Bitcoin",
+      "class": "crypto",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 2,
+      "contract": {
+        "value": 1,
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "From your MT5 symbol list ('1 Lot = N Contracts'). Tradeify FX doesn't publish contract sizes. Check it once with a real trade."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "Priced in US dollars."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 20000, "max": 500000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ETHUSD",
+      "name": "Ethereum",
+      "class": "crypto",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": 2,
+      "contract": {
+        "value": 1,
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "From your MT5 symbol list ('1 Lot = N Contracts'). Tradeify FX doesn't publish contract sizes. Check it once with a real trade."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-mt5",
+        "source": "Your MT5 symbol list, 2 Nov 2026",
+        "checked": "2026-11-02",
+        "note": "Priced in US dollars."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 500, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    }
+  ]
+}

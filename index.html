@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; font-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0c0d0f">
+  <meta name="description" content="Lot size, GO or NO TRADE, and the room left before every rule, worked out before each trade. Works offline; everything stays on this device.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Risk Desk">
+  <title>Risk Desk</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the screen</a>
+  <div class="shell">
+    <aside class="side">
+      <a class="brand" href="#/trade">
+        <svg class="mark" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="6" fill="#202328"/><rect x="7.5" y="5" width="9" height="8.5" rx="1.5" fill="#ffffff"/><rect x="4.5" y="16.5" width="15" height="2.5" rx="1.25" fill="#c6f24e"/></svg>
+        <span class="brand-name">Risk Desk</span>
+      </a>
+      <nav class="nav" aria-label="Screens">
+        <a href="#/trade" data-nav="trade"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"/><path d="M7 15V9"/><path d="M12 15V5"/><path d="M17 15v-4"/></svg><span>Trade</span></a>
+        <a href="#/accounts" data-nav="accounts"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="6" width="17" height="13" rx="2.5"/><path d="M3.5 10h17"/><path d="M8 6V4.5h8V6"/></svg><span>Accounts</span></a>
+        <a href="#/journal" data-nav="journal"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h10.5a2 2 0 0 1 2 2v15H8a2 2 0 0 1-2-2z"/><path d="M6 18.5a2 2 0 0 1 2-2h10.5"/><path d="M10 8h5"/></svg><span>Journal</span></a>
+        <a href="#/rules" data-nav="rules"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 19 6v5.5c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg><span>Rules &amp; sources</span></a>
+        <a href="#/backup" data-nav="backup"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7.5 10.5 4.5 4.5 4.5-4.5"/><path d="M5 19.5h14"/></svg><span>Backup</span></a>
+      </nav>
+      <p class="side-foot">Everything stays on this device. Works offline. Times in India time (IST).</p>
+    </aside>
+
+    <header class="top">
+      <a class="top-brand" href="#/trade" aria-label="Risk Desk, trade screen">
+        <svg class="mark" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="6" fill="#202328"/><rect x="7.5" y="5" width="9" height="8.5" rx="1.5" fill="#ffffff"/><rect x="4.5" y="16.5" width="15" height="2.5" rx="1.25" fill="#c6f24e"/></svg>
+      </a>
+      <h1 id="screen-title" class="screen-title">Trade</h1>
+      <p class="clock" id="clock" aria-label="Time in India"></p>
+    </header>
+
+    <div id="banner" class="banner" role="status" hidden></div>
+
+    <main id="main" class="main" tabindex="-1">
+      <p class="loading">Loading Risk Desk…</p>
+    </main>
+
+    <nav class="tabbar" aria-label="Screens">
+      <a href="#/trade" data-nav="trade"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"/><path d="M7 15V9"/><path d="M12 15V5"/><path d="M17 15v-4"/></svg><span>Trade</span></a>
+      <a href="#/accounts" data-nav="accounts"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="6" width="17" height="13" rx="2.5"/><path d="M3.5 10h17"/><path d="M8 6V4.5h8V6"/></svg><span>Accounts</span></a>
+      <a href="#/journal" data-nav="journal"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h10.5a2 2 0 0 1 2 2v15H8a2 2 0 0 1-2-2z"/><path d="M6 18.5a2 2 0 0 1 2-2h10.5"/><path d="M10 8h5"/></svg><span>Journal</span></a>
+      <a href="#/rules" data-nav="rules"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 19 6v5.5c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg><span>Rules</span></a>
+      <a href="#/backup" data-nav="backup"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7.5 10.5 4.5 4.5 4.5-4.5"/><path d="M5 19.5h14"/></svg><span>Backup</span></a>
+    </nav>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><p class="noscript">Risk Desk needs JavaScript turned on.</p></noscript>
+</body>
+</html>

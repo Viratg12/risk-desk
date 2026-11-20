@@ -1,0 +1,1563 @@
+{
+  "id": "blue-guardian-mt5",
+  "title": "Blue Guardian MT5 symbols",
+  "market": "cfd",
+  "accountCurrency": "USD",
+  "checked": "2026-11-19",
+  "classes": {
+    "fx": {
+      "label": "Forex",
+      "leverage": {
+        "value": 50,
+        "status": "conflict",
+        "source": "https://help.blueguardian.com/en/articles/18426741-cfd-trading-conditions-markets-commissions-and-leverage",
+        "checked": "2026-11-19",
+        "note": "The website shows 'Leverage 1:50 Max'; the help centre gives a figure per market for the evaluation: 1:50 forex, 1:10 indices and commodities, 1:2 crypto. For forex both say 1:50 and no page gives less, so the app uses 1:50, the stricter reading. Neither page says what a funded Nano account gets."
+      },
+      "commission": {
+        "value": { "type": "perLotRoundTrip", "amount": 5 },
+        "status": "your-trades",
+        "source": "Your Nano-account MT5 history, 19 Nov 2026: $5.00 a lot",
+        "checked": "2026-11-19",
+        "note": "The firm lists $5 per lot on FX and commodities but doesn't say per side or round trip. Your Nano-account history shows $5.00 a lot for the whole round trip."
+      }
+    },
+    "metal": {
+      "label": "Metals",
+      "leverage": {
+        "value": 10,
+        "status": "conflict",
+        "source": "https://help.blueguardian.com/en/articles/18426741-cfd-trading-conditions-markets-commissions-and-leverage",
+        "checked": "2026-11-19",
+        "note": "The website shows 'Leverage 1:50 Max'; the help centre gives 1:10 for commodities in the evaluation and groups gold with them. The app uses 1:10, the stricter reading: lower leverage needs more margin per lot (5 times as much), so the margin limit cuts the size sooner. Neither page says what a funded Nano account gets."
+      },
+      "commission": {
+        "value": { "type": "perLotRoundTrip", "amount": 5 },
+        "status": "your-trades",
+        "source": "Your Nano-account MT5 history, 19 Nov 2026: $5.00 a lot",
+        "checked": "2026-11-19",
+        "note": "The firm lists $5 per lot on FX and commodities but doesn't say per side or round trip. Your Nano-account history shows $5.00 a lot for the whole round trip."
+      }
+    },
+    "energy": {
+      "label": "Energies",
+      "leverage": {
+        "value": 10,
+        "status": "conflict",
+        "source": "https://help.blueguardian.com/en/articles/18426741-cfd-trading-conditions-markets-commissions-and-leverage",
+        "checked": "2026-11-19",
+        "note": "The website shows 'Leverage 1:50 Max'; the help centre gives 1:10 for commodities in the evaluation, and oil is one. The app uses 1:10, the stricter reading: lower leverage needs more margin per lot (5 times as much), so the margin limit cuts the size sooner. Neither page says what a funded Nano account gets."
+      },
+      "commission": {
+        "value": { "type": "perLotRoundTrip", "amount": 5 },
+        "status": "your-trades",
+        "source": "Your Nano-account MT5 history, 19 Nov 2026: $5.00 a lot",
+        "checked": "2026-11-19",
+        "note": "The firm lists $5 per lot on FX and commodities but doesn't say per side or round trip. Your Nano-account history shows $5.00 a lot for the whole round trip."
+      }
+    },
+    "index": {
+      "label": "Indices",
+      "leverage": {
+        "value": 10,
+        "status": "conflict",
+        "source": "https://help.blueguardian.com/en/articles/18426741-cfd-trading-conditions-markets-commissions-and-leverage",
+        "checked": "2026-11-19",
+        "note": "The website shows 'Leverage 1:50 Max'; the help centre gives 1:10 for indices in the evaluation. The app uses 1:10, the stricter reading: lower leverage needs more margin per lot (5 times as much), so the margin limit cuts the size sooner. Neither page says what a funded Nano account gets."
+      },
+      "commission": {
+        "value": { "type": "none", "amount": 0 },
+        "status": "confirmed",
+        "source": "https://help.blueguardian.com/en/articles/18426741-cfd-trading-conditions-markets-commissions-and-leverage",
+        "checked": "2026-11-19",
+        "note": "No commission on indices."
+      }
+    },
+    "crypto": {
+      "label": "Crypto",
+      "leverage": {
+        "value": 2,
+        "status": "conflict",
+        "source": "https://help.blueguardian.com/en/articles/18426741-cfd-trading-conditions-markets-commissions-and-leverage",
+        "checked": "2026-11-19",
+        "note": "The website shows 'Leverage 1:50 Max'; the help centre gives 1:2 for crypto in the evaluation. The app uses 1:2, the stricter reading: lower leverage needs more margin per lot (25 times as much), so the margin limit cuts the size sooner. Neither page says what a funded Nano account gets."
+      },
+      "commission": {
+        "value": { "type": "none", "amount": 0 },
+        "status": "confirmed",
+        "source": "https://help.blueguardian.com/en/articles/18426741-cfd-trading-conditions-markets-commissions-and-leverage",
+        "checked": "2026-11-19",
+        "note": "No commission on crypto."
+      }
+    }
+  },
+  "symbols": [
+    {
+      "symbol": "EURUSD",
+      "name": "EUR/USD",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "USD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "USD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "EURGBP",
+      "name": "EUR/GBP",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "GBP",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "GBP"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "EURJPY",
+      "name": "EUR/JPY",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "EURCHF",
+      "name": "EUR/CHF",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "CHF",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "CHF"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "EURCAD",
+      "name": "EUR/CAD",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "CAD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "CAD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "EURAUD",
+      "name": "EUR/AUD",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "AUD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "AUD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "EURNZD",
+      "name": "EUR/NZD",
+      "class": "fx",
+      "base": "EUR",
+      "quote": "NZD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["EUR", "NZD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "name": "GBP/USD",
+      "class": "fx",
+      "base": "GBP",
+      "quote": "USD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["GBP", "USD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GBPJPY",
+      "name": "GBP/JPY",
+      "class": "fx",
+      "base": "GBP",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["GBP", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GBPCHF",
+      "name": "GBP/CHF",
+      "class": "fx",
+      "base": "GBP",
+      "quote": "CHF",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["GBP", "CHF"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GBPCAD",
+      "name": "GBP/CAD",
+      "class": "fx",
+      "base": "GBP",
+      "quote": "CAD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["GBP", "CAD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GBPAUD",
+      "name": "GBP/AUD",
+      "class": "fx",
+      "base": "GBP",
+      "quote": "AUD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["GBP", "AUD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GBPNZD",
+      "name": "GBP/NZD",
+      "class": "fx",
+      "base": "GBP",
+      "quote": "NZD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["GBP", "NZD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "AUDUSD",
+      "name": "AUD/USD",
+      "class": "fx",
+      "base": "AUD",
+      "quote": "USD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": 100000,
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["AUD", "USD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "AUDJPY",
+      "name": "AUD/JPY",
+      "class": "fx",
+      "base": "AUD",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["AUD", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "AUDCHF",
+      "name": "AUD/CHF",
+      "class": "fx",
+      "base": "AUD",
+      "quote": "CHF",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["AUD", "CHF"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "AUDCAD",
+      "name": "AUD/CAD",
+      "class": "fx",
+      "base": "AUD",
+      "quote": "CAD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["AUD", "CAD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "AUDNZD",
+      "name": "AUD/NZD",
+      "class": "fx",
+      "base": "AUD",
+      "quote": "NZD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["AUD", "NZD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "name": "NZD/USD",
+      "class": "fx",
+      "base": "NZD",
+      "quote": "USD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["NZD", "USD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "NZDJPY",
+      "name": "NZD/JPY",
+      "class": "fx",
+      "base": "NZD",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["NZD", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "NZDCHF",
+      "name": "NZD/CHF",
+      "class": "fx",
+      "base": "NZD",
+      "quote": "CHF",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["NZD", "CHF"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "NZDCAD",
+      "name": "NZD/CAD",
+      "class": "fx",
+      "base": "NZD",
+      "quote": "CAD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["NZD", "CAD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "USDJPY",
+      "name": "USD/JPY",
+      "class": "fx",
+      "base": "USD",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "USDCHF",
+      "name": "USD/CHF",
+      "class": "fx",
+      "base": "USD",
+      "quote": "CHF",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": 100000,
+        "status": "your-trades",
+        "source": "Your Nano-account MT5 history, 19 Nov 2026",
+        "checked": "2026-11-19",
+        "note": "Matched to the cent on 7 of your Nano-account USDCHF and USDCAD trades, 19 Nov 2026 (profit converted at the close price)."
+      },
+      "profitCurrency": {
+        "value": "CHF",
+        "status": "your-trades",
+        "source": "Your Nano-account MT5 history, 19 Nov 2026",
+        "checked": "2026-11-19",
+        "note": "Matched to the cent on 7 of your Nano-account USDCHF and USDCAD trades, 19 Nov 2026 (profit converted at the close price)."
+      },
+      "volumeStep": {
+        "value": 0.01,
+        "status": "your-trades",
+        "source": "Your Nano-account MT5 history, 19 Nov 2026",
+        "checked": "2026-11-19",
+        "note": "Sizes with two decimals were accepted, so steps of 0.01 work."
+      },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD", "CHF"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "USDCAD",
+      "name": "USD/CAD",
+      "class": "fx",
+      "base": "USD",
+      "quote": "CAD",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": 100000,
+        "status": "your-trades",
+        "source": "Your Nano-account MT5 history, 19 Nov 2026",
+        "checked": "2026-11-19",
+        "note": "Matched to the cent on 7 of your Nano-account USDCHF and USDCAD trades, 19 Nov 2026 (profit converted at the close price)."
+      },
+      "profitCurrency": {
+        "value": "CAD",
+        "status": "your-trades",
+        "source": "Your Nano-account MT5 history, 19 Nov 2026",
+        "checked": "2026-11-19",
+        "note": "Matched to the cent on 7 of your Nano-account USDCHF and USDCAD trades, 19 Nov 2026 (profit converted at the close price)."
+      },
+      "volumeStep": {
+        "value": 0.01,
+        "status": "your-trades",
+        "source": "Your Nano-account MT5 history, 19 Nov 2026",
+        "checked": "2026-11-19",
+        "note": "Sizes with two decimals were accepted, so steps of 0.01 work."
+      },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD", "CAD"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "CADJPY",
+      "name": "CAD/JPY",
+      "class": "fx",
+      "base": "CAD",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["CAD", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "CADCHF",
+      "name": "CAD/CHF",
+      "class": "fx",
+      "base": "CAD",
+      "quote": "CHF",
+      "pip": 0.0001,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["CAD", "CHF"],
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 3 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "CHFJPY",
+      "name": "CHF/JPY",
+      "class": "fx",
+      "base": "CHF",
+      "quote": "JPY",
+      "pip": 0.01,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Contract size from the MT5 Specification window."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Not checked on Blue Guardian yet. Copy Profit currency from the MT5 Specification window."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["CHF", "JPY"],
+      "priceSanity": {
+        "value": { "min": 50, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "XAUUSD",
+      "name": "Gold",
+      "class": "metal",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": null,
+      "contract": {
+        "value": 100,
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Priced in US dollars. Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 1000, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "XAGUSD",
+      "name": "Silver",
+      "class": "metal",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": null,
+      "contract": {
+        "value": 5000,
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Priced in US dollars. Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 10, "max": 250 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "WTI",
+      "name": "WTI crude oil",
+      "class": "energy",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": null,
+      "contract": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "On 22 Oct 2026 the oil symbol on a Blue Guardian account was named WTI with contract 100 (matched your trades); confirm the name and contract on this account in the app."
+      },
+      "profitCurrency": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "On 22 Oct 2026 the oil symbol on a Blue Guardian account was named WTI and priced in USD (matched your trades); confirm the name and profit currency on this account in the app."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 10, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      },
+      "note": "Blue Guardian names no oil symbol, so 'WTI' stands in for whatever your MT5 calls it. Oil stays blocked until you confirm the symbol from the MT5 Specification window. The firm's news list doesn't name oil; the app treats USD news as covering it."
+    },
+    {
+      "symbol": "US30",
+      "name": "Dow Jones 30",
+      "class": "index",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": null,
+      "contract": {
+        "value": 1,
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Priced in US dollars. Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 10000, "max": 100000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "NAS100",
+      "name": "Nasdaq 100",
+      "class": "index",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": null,
+      "contract": {
+        "value": 10,
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Priced in US dollars. Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 5000, "max": 60000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      },
+      "note": "Blue Guardian's help pages call this NDX100. Use the name your MT5 shows."
+    },
+    {
+      "symbol": "BTCUSD",
+      "name": "Bitcoin",
+      "class": "crypto",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": null,
+      "contract": {
+        "value": 1,
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Priced in US dollars. Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 20000, "max": 500000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ETHUSD",
+      "name": "Ethereum",
+      "class": "crypto",
+      "base": null,
+      "quote": null,
+      "pip": null,
+      "digits": null,
+      "contract": {
+        "value": 1,
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "profitCurrency": {
+        "value": "USD",
+        "status": "your-trades",
+        "source": "Your closed Blue Guardian trades (89 checked), 22 Oct 2026",
+        "checked": "2026-10-22",
+        "note": "Priced in US dollars. Matched your closed trades on a Blue Guardian account, 22 Oct 2026; run one real-trade check on the Nano account before first use."
+      },
+      "volumeStep": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Copy Volume step from the MT5 Specification window." },
+      "volumeMin": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Minimal volume from the MT5 Specification window."
+      },
+      "volumeMax": {
+        "value": null,
+        "status": "unconfirmed",
+        "checked": "2026-11-19",
+        "note": "Copy Maximal volume from the MT5 Specification window."
+      },
+      "newsCurrencies": ["USD"],
+      "priceSanity": {
+        "value": { "min": 500, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    }
+  ]
+}

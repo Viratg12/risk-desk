@@ -1,0 +1,35 @@
+{
+  "id": "no-firm",
+  "name": "No firm (personal account)",
+  "market": "futures",
+  "platform": "Any",
+  "accountCurrency": "USD",
+  "instruments": "cme-ice-futures",
+  "checked": "2026-11-19",
+  "clock": {
+    "value": { "zone": "America/New_York", "dayStartsAt": "18:00" },
+    "status": "confirmed",
+    "source": "https://www.cmegroup.com/markets/equities/sp/e-mini-sandp500.contractSpecs.html",
+    "checked": "2026-11-19",
+    "note": "A personal account has no firm day, so the app uses the CME Globex trading day, which starts at 6 PM New York time (CME's E-mini S&P 500 page)."
+  },
+  "breach": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "No firm rules on a personal account." },
+  "plans": [
+    {
+      "id": "personal",
+      "name": "Personal account",
+      "sizes": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "Any size: type your own account size." },
+      "purchased": null,
+      "stages": [{ "id": "personal", "name": "Personal", "funded": false, "target": null }],
+      "dailyLoss": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "No firm rules: loss limits are not checked." },
+      "maxLoss": { "value": null, "status": "unconfirmed", "checked": "2026-11-19", "note": "No firm rules: loss limits are not checked." },
+      "consistency": null,
+      "news": null,
+      "marginCapPct": null,
+      "minHoldSeconds": null,
+      "contractCaps": null,
+      "notModelled": ["No firm rules: the app sizes from your risk setting only. Loss limits, contract caps and news are not checked."]
+    }
+  ],
+  "notModelled": ["A personal CFD account is not set up: CFD contract sizes differ from broker to broker."]
+}

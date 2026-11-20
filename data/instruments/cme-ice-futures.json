@@ -1,0 +1,2741 @@
+{
+  "id": "cme-ice-futures",
+  "title": "CME Group and ICE futures",
+  "market": "futures",
+  "accountCurrency": "USD",
+  "checked": "2026-11-19",
+  "classes": {
+    "index": { "label": "Equity indices" },
+    "crypto": { "label": "Crypto" },
+    "energy": { "label": "Energy" },
+    "metal": { "label": "Metals" },
+    "grain": { "label": "Grains and oilseeds" },
+    "livestock": { "label": "Livestock" },
+    "softs": { "label": "Softs" },
+    "rates": { "label": "Interest rates" },
+    "fx": { "label": "Currencies" }
+  },
+  "symbols": [
+    {
+      "symbol": "ES",
+      "name": "E-mini S&P 500",
+      "class": "index",
+      "tickSize": {
+        "value": 0.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/sp/e-mini-sandp500.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 12.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/sp/e-mini-sandp500.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "index points",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/sp/e-mini-sandp500.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/sp/e-mini-sandp500.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "MES",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/sp/micro-e-mini-sandp-500.contractSpecs.html",
+        "checked": "2026-11-19",
+        "note": "MES is 1/10 the size of ES."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 1000, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "NQ",
+      "name": "E-mini Nasdaq-100",
+      "class": "index",
+      "tickSize": {
+        "value": 0.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/nasdaq/e-mini-nasdaq-100.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/nasdaq/e-mini-nasdaq-100.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "index points",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/nasdaq/e-mini-nasdaq-100.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/nasdaq/e-mini-nasdaq-100.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "MNQ",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/nasdaq/micro-e-mini-nasdaq-100.contractSpecs.html",
+        "checked": "2026-11-19",
+        "note": "MNQ is 1/10 the size of NQ."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 5000, "max": 60000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "YM",
+      "name": "E-mini Dow ($5)",
+      "class": "index",
+      "tickSize": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/dow-jones/e-mini-dow.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/dow-jones/e-mini-dow.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "index points",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/dow-jones/e-mini-dow.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/dow-jones/e-mini-dow.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "MYM",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/dow-jones/micro-e-mini-dow.contractSpecs.html",
+        "checked": "2026-11-19",
+        "note": "MYM is 1/10 the size of YM."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 10000, "max": 100000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "RTY",
+      "name": "E-mini Russell 2000",
+      "class": "index",
+      "tickSize": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/russell/e-mini-russell-2000.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/russell/e-mini-russell-2000.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "index points",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/russell/e-mini-russell-2000.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/russell/e-mini-russell-2000.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "M2K",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/russell/micro-e-mini-russell-2000.contractSpecs.html",
+        "checked": "2026-11-19",
+        "note": "M2K is 1/10 the size of RTY."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 500, "max": 10000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "EMD",
+      "name": "E-mini S&P MidCap 400",
+      "class": "index",
+      "tickSize": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/sp/e-mini-sandp-midcap-400.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 10,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/sp/e-mini-sandp-midcap-400.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "index points",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/sp/e-mini-sandp-midcap-400.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/sp/e-mini-sandp-midcap-400.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 600, "max": 15000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "NKD",
+      "name": "Nikkei 225 (USD)",
+      "class": "index",
+      "tickSize": {
+        "value": 5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/international-indices/nikkei-225-dollar.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/international-indices/nikkei-225-dollar.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "index points",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/international-indices/nikkei-225-dollar.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/international-indices/nikkei-225-dollar.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 10000, "max": 100000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "MES",
+      "name": "Micro E-mini S&P 500",
+      "class": "index",
+      "tickSize": {
+        "value": 0.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/sp/micro-e-mini-sandp-500.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 1.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/sp/micro-e-mini-sandp-500.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "index points",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/sp/micro-e-mini-sandp-500.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/sp/micro-e-mini-sandp-500.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "checked": "2026-11-19",
+        "note": "10 micros count as 1 mini at the prop firms (Topstep and Tradeify say so)."
+      },
+      "priceSanity": {
+        "value": { "min": 1000, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "MNQ",
+      "name": "Micro E-mini Nasdaq-100",
+      "class": "index",
+      "tickSize": {
+        "value": 0.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/nasdaq/micro-e-mini-nasdaq-100.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 0.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/nasdaq/micro-e-mini-nasdaq-100.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "index points",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/nasdaq/micro-e-mini-nasdaq-100.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/nasdaq/micro-e-mini-nasdaq-100.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "checked": "2026-11-19",
+        "note": "10 micros count as 1 mini at the prop firms (Topstep and Tradeify say so)."
+      },
+      "priceSanity": {
+        "value": { "min": 5000, "max": 60000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "MYM",
+      "name": "Micro E-mini Dow",
+      "class": "index",
+      "tickSize": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/dow-jones/micro-e-mini-dow.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 0.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/dow-jones/micro-e-mini-dow.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "index points",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/dow-jones/micro-e-mini-dow.contractSpecs.html",
+        "checked": "2026-11-19",
+        "note": "CME's page has no price quotation row; its tick is given in index points."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/dow-jones/micro-e-mini-dow.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "checked": "2026-11-19",
+        "note": "10 micros count as 1 mini at the prop firms (Topstep and Tradeify say so)."
+      },
+      "priceSanity": {
+        "value": { "min": 10000, "max": 100000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "M2K",
+      "name": "Micro E-mini Russell 2000",
+      "class": "index",
+      "tickSize": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/russell/micro-e-mini-russell-2000.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 0.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/russell/micro-e-mini-russell-2000.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "index points",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/russell/micro-e-mini-russell-2000.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/equities/russell/micro-e-mini-russell-2000.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "checked": "2026-11-19",
+        "note": "10 micros count as 1 mini at the prop firms (Topstep and Tradeify say so)."
+      },
+      "priceSanity": {
+        "value": { "min": 500, "max": 10000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "class": "crypto",
+      "tickSize": {
+        "value": 5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/bitcoin/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/bitcoin/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per bitcoin",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/bitcoin/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/bitcoin/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "MBT",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/micro-bitcoin/specs",
+        "checked": "2026-11-19",
+        "note": "MBT is 1/50 the size of BTC."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 20000, "max": 500000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "MBT",
+      "name": "Micro Bitcoin",
+      "class": "crypto",
+      "tickSize": {
+        "value": 5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/micro-bitcoin/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 0.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/micro-bitcoin/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per bitcoin",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/micro-bitcoin/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/micro-bitcoin/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "checked": "2026-11-19",
+        "note": "10 micros count as 1 mini at the prop firms (Topstep and Tradeify say so). Topstep caps MBT on its own (see its product caps)."
+      },
+      "priceSanity": {
+        "value": { "min": 20000, "max": 500000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ETH",
+      "name": "Ether",
+      "class": "crypto",
+      "tickSize": {
+        "value": 0.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/ether/ether/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/ether/ether/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per ether",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/ether/ether/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/ether/ether/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "MET",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/ether/micro-ether/specs",
+        "checked": "2026-11-19",
+        "note": "MET is 1/500 the size of ETH."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 500, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "MET",
+      "name": "Micro Ether",
+      "class": "crypto",
+      "tickSize": {
+        "value": 0.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/ether/micro-ether/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 0.05,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/ether/micro-ether/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per ether",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/ether/micro-ether/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/cryptocurrencies/ether/micro-ether/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "checked": "2026-11-19",
+        "note": "10 micros count as 1 mini at the prop firms (Topstep and Tradeify say so). Topstep caps MET at mini-equivalent sizes (see its product caps)."
+      },
+      "priceSanity": {
+        "value": { "min": 500, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "CL",
+      "name": "Crude Oil WTI",
+      "class": "energy",
+      "tickSize": {
+        "value": 0.01,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/crude-oil/light-sweet-crude.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 10,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/crude-oil/light-sweet-crude.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per barrel",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/crude-oil/light-sweet-crude.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/crude-oil/light-sweet-crude.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "MCL",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/crude-oil/micro-wti-crude-oil.contractSpecs.html",
+        "checked": "2026-11-19",
+        "note": "MCL is 1/10 the size of CL."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 10, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "MCL",
+      "name": "Micro WTI Crude Oil",
+      "class": "energy",
+      "tickSize": {
+        "value": 0.01,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/crude-oil/micro-wti-crude-oil.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/crude-oil/micro-wti-crude-oil.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per barrel",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/crude-oil/micro-wti-crude-oil.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/crude-oil/micro-wti-crude-oil.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "checked": "2026-11-19",
+        "note": "10 micros count as 1 mini at the prop firms (Topstep and Tradeify say so)."
+      },
+      "priceSanity": {
+        "value": { "min": 10, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "QM",
+      "name": "E-mini Crude Oil",
+      "class": "energy",
+      "tickSize": {
+        "value": 0.025,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/crude-oil/emini-crude-oil.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 12.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/crude-oil/emini-crude-oil.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per barrel",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/crude-oil/emini-crude-oil.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/crude-oil/emini-crude-oil.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 10, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "NG",
+      "name": "Natural Gas (Henry Hub)",
+      "class": "energy",
+      "tickSize": {
+        "value": 0.001,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/natural-gas/natural-gas.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 10,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/natural-gas/natural-gas.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per MMBtu",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/natural-gas/natural-gas.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/natural-gas/natural-gas.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "MNG",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/natural-gas/micro-henry-hub-natural-gas.contractSpecs.html",
+        "checked": "2026-11-19",
+        "note": "MNG is 1/10 the size of NG."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 0.5, "max": 20 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "QG",
+      "name": "E-mini Natural Gas",
+      "class": "energy",
+      "tickSize": {
+        "value": 0.005,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/natural-gas/emini-natural-gas.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 12.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/natural-gas/emini-natural-gas.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per MMBtu",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/natural-gas/emini-natural-gas.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/natural-gas/emini-natural-gas.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 0.5, "max": 20 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "MNG",
+      "name": "Micro Henry Hub Natural Gas",
+      "class": "energy",
+      "tickSize": {
+        "value": 0.001,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/natural-gas/micro-henry-hub-natural-gas.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/natural-gas/micro-henry-hub-natural-gas.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per MMBtu",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/natural-gas/micro-henry-hub-natural-gas.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/natural-gas/micro-henry-hub-natural-gas.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "checked": "2026-11-19",
+        "note": "10 micros count as 1 mini at the prop firms (Topstep and Tradeify say so)."
+      },
+      "priceSanity": {
+        "value": { "min": 0.5, "max": 20 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "RB",
+      "name": "RBOB Gasoline",
+      "class": "energy",
+      "tickSize": {
+        "value": 0.0001,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/refined-products/rbob-gasoline.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 4.2,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/refined-products/rbob-gasoline.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per gallon",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/refined-products/rbob-gasoline.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/refined-products/rbob-gasoline.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 10 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "HO",
+      "name": "Heating Oil (NY Harbor ULSD)",
+      "class": "energy",
+      "tickSize": {
+        "value": 0.0001,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/refined-products/heating-oil.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 4.2,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/refined-products/heating-oil.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per gallon",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/refined-products/heating-oil.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/energy/refined-products/heating-oil.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 10 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GC",
+      "name": "Gold",
+      "class": "metal",
+      "tickSize": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/gold.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 10,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/gold.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per troy oz",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/gold.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/gold.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "MGC",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/e-micro-gold.contractSpecs.html",
+        "checked": "2026-11-19",
+        "note": "MGC is 1/10 the size of GC."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 1000, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "MGC",
+      "name": "Micro Gold",
+      "class": "metal",
+      "tickSize": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/e-micro-gold.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/e-micro-gold.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per troy oz",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/e-micro-gold.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/e-micro-gold.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "checked": "2026-11-19",
+        "note": "10 micros count as 1 mini at the prop firms (Topstep and Tradeify say so)."
+      },
+      "priceSanity": {
+        "value": { "min": 1000, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "QO",
+      "name": "E-mini Gold",
+      "class": "metal",
+      "tickSize": {
+        "value": 0.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/e-mini-gold.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 12.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/e-mini-gold.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per troy oz",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/e-mini-gold.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/e-mini-gold.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 1000, "max": 20000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "SI",
+      "name": "Silver",
+      "class": "metal",
+      "tickSize": {
+        "value": 0.005,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/silver.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/silver.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per troy oz",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/silver.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/silver.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "SIL",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/1000-oz-silver.contractSpecs.html",
+        "checked": "2026-11-19",
+        "note": "SIL is 1/5 the size of SI."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 10, "max": 250 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "SIL",
+      "name": "Micro Silver (1,000 oz)",
+      "class": "metal",
+      "tickSize": {
+        "value": 0.005,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/1000-oz-silver.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/1000-oz-silver.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per troy oz",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/1000-oz-silver.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/1000-oz-silver.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.2,
+        "status": "conflict",
+        "source": "https://help.topstep.com/en/articles/8284223-what-is-the-scaling-plan",
+        "checked": "2026-11-19",
+        "note": "Topstep's Scaling Plan page counts Micro Silver (SIL) as 2 micros, because it is 1/5 of Silver (SI), not 1/10. Its parameters page counts every micro at 10 to a mini, and the other firms' pages don't single SIL out. The app counts SIL as 0.2 of a mini at every firm: the stricter reading, so half as many SIL fit under a mini limit."
+      },
+      "priceSanity": {
+        "value": { "min": 10, "max": 250 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "QI",
+      "name": "E-mini Silver",
+      "class": "metal",
+      "tickSize": {
+        "value": 0.0125,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/e-mini-silver.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 31.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/e-mini-silver.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per troy oz",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/e-mini-silver.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/e-mini-silver.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 10, "max": 250 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "HG",
+      "name": "Copper",
+      "class": "metal",
+      "tickSize": {
+        "value": 0.0005,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/base/copper.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 12.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/base/copper.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per lb",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/base/copper.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/base/copper.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "MHG",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/base/micro-copper.contractSpecs.html",
+        "checked": "2026-11-19",
+        "note": "MHG is 1/10 the size of HG."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 1, "max": 25 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "MHG",
+      "name": "Micro Copper",
+      "class": "metal",
+      "tickSize": {
+        "value": 0.0005,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/base/micro-copper.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 1.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/base/micro-copper.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per lb",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/base/micro-copper.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/base/micro-copper.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "checked": "2026-11-19",
+        "note": "10 micros count as 1 mini at the prop firms (Topstep and Tradeify say so)."
+      },
+      "priceSanity": {
+        "value": { "min": 1, "max": 25 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "PL",
+      "name": "Platinum",
+      "class": "metal",
+      "tickSize": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/platinum.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/platinum.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per troy oz",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/platinum.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/platinum.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 200, "max": 8000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "PA",
+      "name": "Palladium",
+      "class": "metal",
+      "tickSize": {
+        "value": 0.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/palladium.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 50,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/palladium.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per troy oz",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/palladium.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/metals/precious/palladium.contractSpecs.html",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 200, "max": 8000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ZC",
+      "name": "Corn",
+      "class": "grain",
+      "tickSize": {
+        "value": 0.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/corn/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 12.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/corn/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "cents per bushel",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/corn/specs",
+        "checked": "2026-11-19",
+        "note": "CME quotes the price in cents and writes the tick in dollars; type prices in cents."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/corn/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 100, "max": 2000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ZS",
+      "name": "Soybeans",
+      "class": "grain",
+      "tickSize": {
+        "value": 0.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 12.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "cents per bushel",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean/specs",
+        "checked": "2026-11-19",
+        "note": "CME quotes the price in cents and writes the tick in dollars; type prices in cents."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 200, "max": 5000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ZW",
+      "name": "Wheat (Chicago SRW)",
+      "class": "grain",
+      "tickSize": {
+        "value": 0.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/wheat/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 12.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/wheat/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "cents per bushel",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/wheat/specs",
+        "checked": "2026-11-19",
+        "note": "CME quotes the price in cents and writes the tick in dollars; type prices in cents."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/wheat/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 100, "max": 3000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "KE",
+      "name": "KC HRW Wheat",
+      "class": "grain",
+      "tickSize": {
+        "value": 0.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/kc-wheat/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 12.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/kc-wheat/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "cents per bushel",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/kc-wheat/specs",
+        "checked": "2026-11-19",
+        "note": "CME quotes the price in cents and writes the tick in dollars; type prices in cents."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/kc-wheat/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 100, "max": 3000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ZL",
+      "name": "Soybean Oil",
+      "class": "grain",
+      "tickSize": {
+        "value": 0.01,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean-oil/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 6,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean-oil/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "cents per lb",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean-oil/specs",
+        "checked": "2026-11-19",
+        "note": "CME quotes the price in cents and writes the tick in dollars; type prices in cents."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean-oil/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 10, "max": 250 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ZM",
+      "name": "Soybean Meal",
+      "class": "grain",
+      "tickSize": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean-meal/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 10,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean-meal/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per short ton",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean-meal/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/oilseeds/soybean-meal/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 60, "max": 1500 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ZO",
+      "name": "Oats",
+      "class": "grain",
+      "tickSize": {
+        "value": 0.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/oats/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 12.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/oats/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "cents per bushel",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/oats/specs",
+        "checked": "2026-11-19",
+        "note": "CME quotes the price in cents and writes the tick in dollars; type prices in cents."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/oats/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 60, "max": 1500 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ZR",
+      "name": "Rough Rice",
+      "class": "grain",
+      "tickSize": {
+        "value": 0.005,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/rough-rice/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 10,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/rough-rice/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per cwt",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/rough-rice/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/grains/rough-rice/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 2.5, "max": 60 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "LE",
+      "name": "Live Cattle",
+      "class": "livestock",
+      "tickSize": {
+        "value": 0.025,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/livestock/live-cattle/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 10,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/livestock/live-cattle/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "cents per lb",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/livestock/live-cattle/specs",
+        "checked": "2026-11-19",
+        "note": "CME quotes the price in cents and writes the tick in dollars; type prices in cents."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/livestock/live-cattle/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 40, "max": 1000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "GF",
+      "name": "Feeder Cattle",
+      "class": "livestock",
+      "tickSize": {
+        "value": 0.025,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/livestock/feeder-cattle/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 12.5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/livestock/feeder-cattle/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "cents per lb",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/livestock/feeder-cattle/specs",
+        "checked": "2026-11-19",
+        "note": "CME quotes the price in cents and writes the tick in dollars; type prices in cents."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/livestock/feeder-cattle/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 60, "max": 1500 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "HE",
+      "name": "Lean Hogs",
+      "class": "livestock",
+      "tickSize": {
+        "value": 0.025,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/livestock/lean-hogs/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 10,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/livestock/lean-hogs/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "cents per lb",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/livestock/lean-hogs/specs",
+        "checked": "2026-11-19",
+        "note": "CME quotes the price in cents and writes the tick in dollars; type prices in cents."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/agriculture/livestock/lean-hogs/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 15, "max": 500 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "CC",
+      "name": "Cocoa",
+      "class": "softs",
+      "tickSize": { "value": 1, "status": "confirmed", "source": "https://www.ice.com/products/7/Cocoa-Futures", "checked": "2026-11-19" },
+      "tickValue": { "value": 10, "status": "confirmed", "source": "https://www.ice.com/products/7/Cocoa-Futures", "checked": "2026-11-19" },
+      "quoteUnit": {
+        "value": "$ per metric ton",
+        "status": "confirmed",
+        "source": "https://www.ice.com/products/7/Cocoa-Futures",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "ICE Futures U.S.",
+        "status": "confirmed",
+        "source": "https://www.ice.com/products/7/Cocoa-Futures",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 1000, "max": 40000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "KC",
+      "name": "Coffee",
+      "class": "softs",
+      "tickSize": { "value": 0.05, "status": "confirmed", "source": "https://www.ice.com/products/15/Coffee-CFutures", "checked": "2026-11-19" },
+      "tickValue": { "value": 18.75, "status": "confirmed", "source": "https://www.ice.com/products/15/Coffee-CFutures", "checked": "2026-11-19" },
+      "quoteUnit": {
+        "value": "cents per lb",
+        "status": "confirmed",
+        "source": "https://www.ice.com/products/15/Coffee-CFutures",
+        "checked": "2026-11-19",
+        "note": "ICE quotes the price in cents per lb; type prices in cents."
+      },
+      "exchange": {
+        "value": "ICE Futures U.S.",
+        "status": "confirmed",
+        "source": "https://www.ice.com/products/15/Coffee-CFutures",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 50, "max": 2000 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "CT",
+      "name": "Cotton No. 2",
+      "class": "softs",
+      "tickSize": { "value": 0.01, "status": "confirmed", "source": "https://www.ice.com/products/254/Cotton-No-2-Futures", "checked": "2026-11-19" },
+      "tickValue": { "value": 5, "status": "confirmed", "source": "https://www.ice.com/products/254/Cotton-No-2-Futures", "checked": "2026-11-19" },
+      "quoteUnit": {
+        "value": "cents per lb",
+        "status": "confirmed",
+        "source": "https://www.ice.com/products/254/Cotton-No-2-Futures",
+        "checked": "2026-11-19",
+        "note": "ICE quotes the price in cents per lb; type prices in cents."
+      },
+      "exchange": {
+        "value": "ICE Futures U.S.",
+        "status": "confirmed",
+        "source": "https://www.ice.com/products/254/Cotton-No-2-Futures",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 15, "max": 400 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "SB",
+      "name": "Sugar No. 11",
+      "class": "softs",
+      "tickSize": { "value": 0.01, "status": "confirmed", "source": "https://www.ice.com/products/23/Sugar-No-11-Futures", "checked": "2026-11-19" },
+      "tickValue": { "value": 11.2, "status": "confirmed", "source": "https://www.ice.com/products/23/Sugar-No-11-Futures", "checked": "2026-11-19" },
+      "quoteUnit": {
+        "value": "cents per lb",
+        "status": "confirmed",
+        "source": "https://www.ice.com/products/23/Sugar-No-11-Futures",
+        "checked": "2026-11-19",
+        "note": "ICE quotes the price in cents per lb; type prices in cents."
+      },
+      "exchange": {
+        "value": "ICE Futures U.S.",
+        "status": "confirmed",
+        "source": "https://www.ice.com/products/23/Sugar-No-11-Futures",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 3, "max": 100 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "OJ",
+      "name": "Orange Juice (FCOJ-A)",
+      "class": "softs",
+      "tickSize": { "value": 0.05, "status": "confirmed", "source": "https://www.ice.com/products/30/FCOJ-A-Futures", "checked": "2026-11-19" },
+      "tickValue": { "value": 7.5, "status": "confirmed", "source": "https://www.ice.com/products/30/FCOJ-A-Futures", "checked": "2026-11-19" },
+      "quoteUnit": {
+        "value": "cents per lb",
+        "status": "confirmed",
+        "source": "https://www.ice.com/products/30/FCOJ-A-Futures",
+        "checked": "2026-11-19",
+        "note": "ICE quotes the price in cents per lb; type prices in cents."
+      },
+      "exchange": {
+        "value": "ICE Futures U.S.",
+        "status": "confirmed",
+        "source": "https://www.ice.com/products/30/FCOJ-A-Futures",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 50, "max": 1500 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ZN",
+      "name": "10-Year T-Note",
+      "class": "rates",
+      "tickSize": {
+        "value": 0.015625,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/10-year-us-treasury-note/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 15.625,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/10-year-us-treasury-note/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "points, as decimals (1/32 = 0.03125)",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/10-year-us-treasury-note/specs",
+        "checked": "2026-11-19",
+        "note": "Type prices as decimals with at least 4 decimal places: 110'16 is 110.5."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/10-year-us-treasury-note/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 80, "max": 200 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ZB",
+      "name": "30-Year T-Bond",
+      "class": "rates",
+      "tickSize": {
+        "value": 0.03125,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/30-year-us-treasury-bond/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 31.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/30-year-us-treasury-bond/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "points, as decimals (1/32 = 0.03125)",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/30-year-us-treasury-bond/specs",
+        "checked": "2026-11-19",
+        "note": "Type prices as decimals with at least 4 decimal places: 110'16 is 110.5."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/30-year-us-treasury-bond/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 60, "max": 300 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ZF",
+      "name": "5-Year T-Note",
+      "class": "rates",
+      "tickSize": {
+        "value": 0.0078125,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/5-year-us-treasury-note/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 7.8125,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/5-year-us-treasury-note/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "points, as decimals (1/32 = 0.03125)",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/5-year-us-treasury-note/specs",
+        "checked": "2026-11-19",
+        "note": "Type prices as decimals with at least 4 decimal places: 110'16 is 110.5."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/5-year-us-treasury-note/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 80, "max": 200 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ZT",
+      "name": "2-Year T-Note",
+      "class": "rates",
+      "tickSize": {
+        "value": 0.00390625,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/2-year-us-treasury-note/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 7.8125,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/2-year-us-treasury-note/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "points, as decimals (1/32 = 0.03125)",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/2-year-us-treasury-note/specs",
+        "checked": "2026-11-19",
+        "note": "Type prices as decimals with at least 4 decimal places: 110'16 is 110.5."
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/us-treasury/2-year-us-treasury-note/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 80, "max": 200 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "ZQ",
+      "name": "30-Day Fed Funds",
+      "class": "rates",
+      "tickSize": {
+        "value": 0.005,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/stirs/30-day-federal-fund/specs",
+        "checked": "2026-11-19",
+        "note": "In the spot (nearest) month the tick is 0.0025 = $10.4175. The dollars per 1.00 move are the same."
+      },
+      "tickValue": {
+        "value": 20.835,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/stirs/30-day-federal-fund/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "100 minus rate",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/stirs/30-day-federal-fund/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/interest-rates/stirs/30-day-federal-fund/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 80, "max": 110 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "6E",
+      "name": "Euro FX",
+      "class": "fx",
+      "tickSize": {
+        "value": 0.00005,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/euro-fx/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 6.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/euro-fx/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per EUR",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/euro-fx/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/euro-fx/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "M6E",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-euro/specs",
+        "checked": "2026-11-19",
+        "note": "M6E is 1/10 the size of 6E."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 0.5, "max": 2 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "M6E",
+      "name": "Micro Euro",
+      "class": "fx",
+      "tickSize": {
+        "value": 0.0001,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-euro/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 1.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-euro/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per EUR",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-euro/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-euro/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "checked": "2026-11-19",
+        "note": "10 micros count as 1 mini at the prop firms (Topstep and Tradeify say so)."
+      },
+      "priceSanity": {
+        "value": { "min": 0.5, "max": 2 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "6B",
+      "name": "British Pound",
+      "class": "fx",
+      "tickSize": {
+        "value": 0.0001,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/british-pound/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 6.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/british-pound/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per GBP",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/british-pound/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/british-pound/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "M6B",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-british-pound/specs",
+        "checked": "2026-11-19",
+        "note": "M6B is 1/10 the size of 6B."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 0.5, "max": 2.5 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "M6B",
+      "name": "Micro British Pound",
+      "class": "fx",
+      "tickSize": {
+        "value": 0.0001,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-british-pound/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 0.625,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-british-pound/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per GBP",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-british-pound/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-british-pound/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "checked": "2026-11-19",
+        "note": "10 micros count as 1 mini at the prop firms (Topstep and Tradeify say so)."
+      },
+      "priceSanity": {
+        "value": { "min": 0.5, "max": 2.5 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "6J",
+      "name": "Japanese Yen",
+      "class": "fx",
+      "tickSize": {
+        "value": 5e-7,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/japanese-yen/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 6.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/japanese-yen/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per JPY",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/japanese-yen/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/japanese-yen/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 0.003, "max": 0.02 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "6A",
+      "name": "Australian Dollar",
+      "class": "fx",
+      "tickSize": {
+        "value": 0.00005,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/australian-dollar/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/australian-dollar/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per AUD",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/australian-dollar/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/australian-dollar/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": {
+        "value": "M6A",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-australian-dollar/specs",
+        "checked": "2026-11-19",
+        "note": "M6A is 1/10 the size of 6A."
+      },
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 1.5 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "M6A",
+      "name": "Micro Australian Dollar",
+      "class": "fx",
+      "tickSize": {
+        "value": 0.0001,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-australian-dollar/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-australian-dollar/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per AUD",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-australian-dollar/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/e-micro-australian-dollar/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 0.1,
+        "status": "confirmed",
+        "source": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
+        "checked": "2026-11-19",
+        "note": "10 micros count as 1 mini at the prop firms (Topstep and Tradeify say so)."
+      },
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 1.5 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "6C",
+      "name": "Canadian Dollar",
+      "class": "fx",
+      "tickSize": {
+        "value": 0.00005,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/canadian-dollar/specs",
+        "checked": "2026-11-19"
+      },
+      "tickValue": {
+        "value": 5,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/canadian-dollar/specs",
+        "checked": "2026-11-19"
+      },
+      "quoteUnit": {
+        "value": "$ per CAD",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/canadian-dollar/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/canadian-dollar/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 0.3, "max": 1.5 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    },
+    {
+      "symbol": "6S",
+      "name": "Swiss Franc",
+      "class": "fx",
+      "tickSize": {
+        "value": 0.00005,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/swiss-franc/specs",
+        "checked": "2026-11-19",
+        "note": "Old calculator: 0.0001. CME cut the tick to 0.00005 in 2022 (notice SER-8936). The dollars per 1.00 move are unchanged."
+      },
+      "tickValue": {
+        "value": 6.25,
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/swiss-franc/specs",
+        "checked": "2026-11-19",
+        "note": "Old calculator: $12.50 a tick (with the old 0.0001 tick)."
+      },
+      "quoteUnit": {
+        "value": "$ per CHF",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/swiss-franc/specs",
+        "checked": "2026-11-19"
+      },
+      "exchange": {
+        "value": "CME Group",
+        "status": "confirmed",
+        "source": "https://www.cmegroup.com/markets/fx/g10/swiss-franc/specs",
+        "checked": "2026-11-19"
+      },
+      "micro": null,
+      "capWeight": {
+        "value": 1,
+        "status": "confirmed",
+        "source": "https://help.tradeify.co/en/articles/10468222-rules-supported-trading-products-assets",
+        "checked": "2026-11-19",
+        "note": "Full-size and E-mini contracts each count as 1 mini."
+      },
+      "priceSanity": {
+        "value": { "min": 0.5, "max": 2.5 },
+        "status": "sanity",
+        "checked": "2026-11-19",
+        "note": "Not a firm rule: a wide range that catches a slipped decimal. Widen it here if the market really trades outside it."
+      }
+    }
+  ]
+}

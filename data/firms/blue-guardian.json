@@ -1,0 +1,119 @@
+{
+  "id": "blue-guardian",
+  "name": "Blue Guardian",
+  "market": "cfd",
+  "platform": "MT5",
+  "accountCurrency": "USD",
+  "instruments": "blue-guardian-mt5",
+  "checked": "2026-11-19",
+  "clock": {
+    "value": { "zone": "America/New_York", "dayStartsAt": "17:00" },
+    "status": "confirmed",
+    "source": "https://help.blueguardian.com/en/articles/18426727-trading-hours-and-the-trading-day",
+    "checked": "2026-11-19",
+    "note": "The day resets at 5 PM New York time and follows US daylight saving: 3:30 AM IST in US winter, 2:30 AM IST in US summer. Old Nano page: fixed 3:30 AM IST."
+  },
+  "breach": {
+    "value": { "touchIsBreach": true, "checkedOn": "equity" },
+    "status": "conflict",
+    "source": "https://help.blueguardian.com/en/articles/18426785-2-step-nano-rules",
+    "checked": "2026-11-19",
+    "note": "Equity, including open trades, must stay above each floor; the app treats touching a floor as a breach. The firm's pages disagree about the daily limit: one says hitting it fails the account, another says it only locks trading until the next reset. The app treats it as a hard stop."
+  },
+  "plans": [
+    {
+      "id": "2-step-nano",
+      "name": "2 Step Nano",
+      "sizes": {
+        "value": [25000, 50000, 100000, 200000],
+        "status": "confirmed",
+        "source": "https://blueguardian.com/?market=cfd&plan=two_step_nano#evaluation",
+        "checked": "2026-11-19",
+        "note": "Sizes on the firm's plan table."
+      },
+      "purchased": null,
+      "stages": [
+        {
+          "id": "phase1",
+          "name": "Phase 1",
+          "funded": false,
+          "target": {
+            "value": { "pctOfSize": 8 },
+            "status": "confirmed",
+            "source": "https://help.blueguardian.com/en/articles/18426785-2-step-nano-rules",
+            "checked": "2026-11-19",
+            "note": "No minimum days, no time limit."
+          }
+        },
+        {
+          "id": "phase2",
+          "name": "Phase 2",
+          "funded": false,
+          "target": {
+            "value": { "pctOfSize": 5 },
+            "status": "confirmed",
+            "source": "https://help.blueguardian.com/en/articles/18426785-2-step-nano-rules",
+            "checked": "2026-11-19",
+            "note": "Phase 2 runs on a new account."
+          }
+        },
+        { "id": "funded", "name": "Funded", "funded": true, "target": null }
+      ],
+      "dailyLoss": {
+        "value": { "pctOfSize": 3, "from": "higherOfBalanceEquityAtReset" },
+        "status": "conflict",
+        "source": "https://help.blueguardian.com/en/articles/18426785-2-step-nano-rules",
+        "checked": "2026-11-19",
+        "note": "3% of the starting balance, the same in both phases and when funded. The firm's pages disagree. The help article measures it from the higher of balance and equity at the 5 PM New York reset; the website says from the day's starting balance. One page says hitting it fails the account, another says it only locks trading until the next reset. The app uses the stricter reading: the higher of balance and equity, and hitting it is a hard stop."
+      },
+      "maxLoss": {
+        "value": { "type": "static", "pctOfSize": 10 },
+        "status": "confirmed",
+        "source": "https://help.blueguardian.com/en/articles/18426785-2-step-nano-rules",
+        "checked": "2026-11-19",
+        "note": "Floor = starting balance minus 10%. It never trails and stays the same when funded. Equity, including open trades, must stay above it."
+      },
+      "consistency": {
+        "value": { "pctBestDay": 50, "appliesTo": "payout" },
+        "status": "confirmed",
+        "source": "https://help.blueguardian.com/en/articles/18426785-2-step-nano-rules",
+        "checked": "2026-11-19",
+        "note": "Funded only. In each payout period your best day must be below 50% of total profit before you can ask for a payout. Not a breach. No consistency rule in Phase 1 or 2."
+      },
+      "news": {
+        "value": { "appliesTo": "funded", "minutesBefore": 5, "minutesAfter": 5 },
+        "status": "conflict",
+        "source": "https://help.blueguardian.com/en/articles/18426788-cfd-news-trading-rules",
+        "checked": "2026-11-19",
+        "note": "Funded only. The website's funded table says just 'News Trading: No'. The help centre gives the rule: don't open or close trades on affected symbols from 5 minutes before to 5 minutes after high-impact (red-folder) news, or around any FOMC event; profit made in that window is removed, and the account is not breached. News trading is allowed in the evaluation. The app uses the help centre's window, the only one either page gives, and blocks the trade (NO TRADE) instead of only removing the profit: the stricter reading. Ask Blue Guardian support if 'No' means more than this window."
+      },
+      "marginCapPct": {
+        "value": 80,
+        "status": "confirmed",
+        "source": "https://help.blueguardian.com/en/articles/18426719-prohibited-trading-strategies",
+        "checked": "2026-11-19",
+        "note": "Using more than 80% of your margin on open trades counts as gambling: payout refused, profit removed or account closed."
+      },
+      "minHoldSeconds": {
+        "value": 120,
+        "status": "confirmed",
+        "source": "https://help.blueguardian.com/en/articles/18426785-2-step-nano-rules",
+        "checked": "2026-11-19",
+        "note": "Hold each trade at least 2 minutes (tick-scalping rule)."
+      },
+      "contractCaps": null,
+      "notModelled": [
+        "Payouts (funded): every 14 days, at most 2% of the starting balance per cycle, 3% fee. The account is read-only during review.",
+        "A 100% margin level stops you out: your least profitable trade is closed.",
+        "No trade for 30 days (counted from when the account is created) breaches the account.",
+        "Tick scalping, high-frequency trading and arbitrage bots are banned. Excessive risk per trade is prohibited (the firm gives no number).",
+        "Funded CFD accounts are capped at $400,000 of active balance in total.",
+        "The firm doesn't say whether open profit counts toward the profit targets."
+      ]
+    }
+  ],
+  "notModelled": [
+    "1 Step Nano and 2 Step Standard: other Blue Guardian CFD programs, not set up in the app.",
+    "Blue Guardian futures plans: not set up in the app."
+  ]
+}

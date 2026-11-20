@@ -1,0 +1,76 @@
+{
+  "about": "List of the data files. Made by tools/build-index.mjs; run it after any change to a data file.",
+  "firms": [
+    {
+      "id": "blue-guardian",
+      "name": "Blue Guardian",
+      "market": "cfd",
+      "instruments": "blue-guardian-mt5",
+      "checked": "2026-11-19",
+      "file": "data/firms/blue-guardian.json"
+    },
+    {
+      "id": "lucid",
+      "name": "Lucid Trading",
+      "market": "futures",
+      "instruments": "cme-ice-futures",
+      "checked": "2026-11-19",
+      "file": "data/firms/lucid.json"
+    },
+    {
+      "id": "no-firm",
+      "name": "No firm (personal account)",
+      "market": "futures",
+      "instruments": "cme-ice-futures",
+      "checked": "2026-11-19",
+      "file": "data/firms/no-firm.json"
+    },
+    {
+      "id": "topstep",
+      "name": "Topstep",
+      "market": "futures",
+      "instruments": "cme-ice-futures",
+      "checked": "2026-11-19",
+      "file": "data/firms/topstep.json"
+    },
+    {
+      "id": "tradeify-futures",
+      "name": "Tradeify (futures)",
+      "market": "futures",
+      "instruments": "cme-ice-futures",
+      "checked": "2026-11-19",
+      "file": "data/firms/tradeify-futures.json"
+    },
+    {
+      "id": "tradeify-fx",
+      "name": "Tradeify FX",
+      "market": "cfd",
+      "instruments": "tradeify-fx-mt5",
+      "checked": "2026-11-19",
+      "file": "data/firms/tradeify-fx.json"
+    }
+  ],
+  "instruments": [
+    {
+      "id": "blue-guardian-mt5",
+      "title": "Blue Guardian MT5 symbols",
+      "market": "cfd",
+      "checked": "2026-11-19",
+      "file": "data/instruments/blue-guardian-mt5.json"
+    },
+    {
+      "id": "cme-ice-futures",
+      "title": "CME Group and ICE futures",
+      "market": "futures",
+      "checked": "2026-11-19",
+      "file": "data/instruments/cme-ice-futures.json"
+    },
+    {
+      "id": "tradeify-fx-mt5",
+      "title": "Tradeify FX MT5 symbols",
+      "market": "cfd",
+      "checked": "2026-11-19",
+      "file": "data/instruments/tradeify-fx-mt5.json"
+    }
+  ]
+}
